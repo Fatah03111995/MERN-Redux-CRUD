@@ -12,7 +12,7 @@ productRouter
   .get('/', getProduct)
   .get('/:id', getProductById)
   .post('/', saveProduct)
-  .patch('/:id', editProduct)
+  .put('/:id', editProduct)
   .delete('/:id', deleteProduct);
 
 export default productRouter;

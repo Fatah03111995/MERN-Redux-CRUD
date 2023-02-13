@@ -1,5 +1,5 @@
 ###
-POST http://localhost:3000/product HTTP/1.1
+POST http://localhost:5000/product HTTP/1.1
 Content-Type: application/json
 
 {
@@ -8,16 +8,16 @@ Content-Type: application/json
 }
 
 ###
-GEt http://localhost:3000/product
+GEt http://localhost:5000/product
 
 ###
-GET http://localhost:3000/product/63e8bed9f64d6351a8c64bfc HTTP/1.1
+GET http://localhost:5000/product/63e8bed9f64d6351a8c64bfc HTTP/1.1
 
 ###
-PATCH http://localhost:3000/product/63e8bed9f64d6351a8c64bfc HTTP/1.1
+PUT http://localhost:5000/product/63e8bed9f64d6351a8c64bfc HTTP/1.1
 Content-Type: application/json
 
 {
     "title" : "revised",
-    "price" : "9900"
+    "price" : "10000"
 }

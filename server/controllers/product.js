@@ -36,7 +36,7 @@ export const editProduct = async (req, res) => {
     const update = await Product.updateOne({ _id: id }, { $set: req.body });
     res.status(201).json(update);
   } catch (e) {
-    res.status(500).message(e.message);
+    res.status(500).json({ message: e.message });
   }
 };
 export const deleteProduct = async (req, res) => {
